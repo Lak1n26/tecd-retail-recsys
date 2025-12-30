@@ -1,0 +1,20 @@
+defaults:
+  - data: default
+  - model: mlp
+  - train: default
+  - _self_
+
+project_name: tecd-retail-recsys
+seed: 42
+
+mlflow:
+  tracking_uri: http://127.0.0.1:8080
+  experiment_name: ${project_name}
+
+paths:
+  root_dir: .
+  data_dir: ${paths.root_dir}/data
+  raw_data_dir: ${paths.root_dir}/t_ecd_small_partial/dataset/small
+  processed_data_dir: ${paths.data_dir}/processed
+  output_dir: ${paths.root_dir}/outputs
+  checkpoints_dir: ${paths.output_dir}/checkpoints

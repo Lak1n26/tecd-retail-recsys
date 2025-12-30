@@ -1,0 +1,24 @@
+# Data configuration
+domain: retail
+action_type: added-to-cart
+
+# Days range (T-ECD retail domain: 1082-1308, total 227 days)
+day_begin: 1259
+day_end: 1308
+
+# Train/Val/Test split (Global Temporal Split)
+# train: first N-4 days, val: next 2 days, test: last 2 days
+val_days: 2
+test_days: 2
+
+# Preprocessing
+min_user_interactions: 5
+min_item_interactions: 5
+max_sequence_length: 50
+
+# DataLoader
+batch_size: 32
+num_workers: 2
+
+# Negative sampling
+num_negatives: 4

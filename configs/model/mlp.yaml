@@ -1,0 +1,14 @@
+# MLP Ranker Model configuration
+name: mlp_ranker
+
+# Embedding dimensions
+user_embedding_dim: 64
+item_embedding_dim: 64
+
+# MLP architecture
+hidden_dims: [256, 128, 64]
+dropout: 0.2
+activation: relu
+
+# Output
+use_batch_norm: true

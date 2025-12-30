@@ -1,0 +1,6 @@
+outs:
+- md5: 0e0687814ee82dcb2a3ab6620692d220.dir
+  size: 1915266445
+  nfiles: 234
+  hash: md5
+  path: t_ecd_small_partial
